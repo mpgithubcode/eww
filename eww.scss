@@ -6,51 +6,29 @@
 .bar {
   background-color: transparent;
   color: #b0b4bc;
-  // padding: 10px;
+  // padding: 12px;
   font-family: "Public Pixel";
   font-size: 15px;
 }
 
 // Styles on classes (see eww.yuck for more information)
 
-.sidestuff slider {
-  all: unset;
-  color: #ffd5cd;
+
+.Battery label {
+  font-family: "JetBrains Mono";
+  font-size: 20px;
 }
 
-.metric scale trough highlight {
-  all: unset;
-  background-color: #D35D6E;
-  color: #000000;
-  border-radius: 10px;
+.launcher, .Volume, .CPU, .Memory, .Wifi label {
+  font-family: "JetBrains Mono";
+  font-size: 35px;
 }
-.metric scale trough {
-  all: unset;
-  background-color: #4e4e4e;
-  border-radius: 50px;
-  min-height: 3px;
-  min-width: 50px;
-  margin-left: 10px;
-  margin-right: 20px;
+
+.Lock label {
+  font-family: "JetBrains Mono";
+  font-size: 25px;
 }
-.metric scale trough highlight {
-  all: unset;
-  background-color: #D35D6E;
-  color: #000000;
-  border-radius: 10px;
-}
-.metric scale trough {
-  all: unset;
-  background-color: #4e4e4e;
-  border-radius: 50px;
-  min-height: 3px;
-  min-width: 50px;
-  margin-left: 10px;
-  margin-right: 20px;
-}
-.label-ram {
-  font-size: large;
-}
+
 .workspaces button:hover {
   color: #D35D6E;
 }
