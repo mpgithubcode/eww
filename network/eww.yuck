@@ -1,0 +1,27 @@
+(defwindow example
+          :monitor 0
+          :geometry (geometry :x "0%"
+                              :y "10%"
+                               :width "20%"
+                               :height "10%"
+                               :anchor "top right")
+           :stacking "fg"
+           :windowtype "normal"
+           :wm-ignore true
+(gpu)
+)
+
+(defpoll gpu_usage :interval "10s" "echo 'test'")
+
+(defwidget icon-module [?class]
+  (box :class "${class} icon-module"
+       :orientation "h"
+       :halign "end"
+       :space-evenly false
+    (label :class "icon-module__icon")
+    (children)))
+
+(defwidget gpu []
+  (icon-module :class "gpu"
+       (label :text gpu_usage)))
+
